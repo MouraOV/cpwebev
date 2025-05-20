@@ -7,8 +7,29 @@
     <title>CP Webdev</title>
 </head>
 <body>
-    <section class="products">
+
+    <button id="listButton">Listar</button>
+
+    <form id="form">
+        <label for="category">Categorias:</label>
+        <select name="category" id="category">
+            <option value="comida">Comidas</option>
+            <option value="higiene">Higiene</option>
+        </select>
+
+        <button id="filterButton">Filtrar</button>
+
+        <label>
+            <input type="checkbox" name="availability" id="availability">
+            Somente disponíveis
+        </label>
+    </form>
+
+    <section id="products" class="products">
 
     </section>
+
 </body>
+
+<script src="./app.js"></script>
 </html>
